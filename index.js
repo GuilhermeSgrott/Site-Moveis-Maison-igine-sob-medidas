@@ -1,4 +1,6 @@
-// Menu hambúrguer
+// =======================
+// Menu Hambúrguer
+// =======================
 const btnHamburger = document.getElementById('btn-hamburger');
 const navMenu = document.getElementById('nav-menu');
 
@@ -12,7 +14,9 @@ document.querySelectorAll('#nav-menu a').forEach(link => {
   });
 });
 
-// Modo claro / escuro
+// =======================
+// Modo Claro / Escuro
+// =======================
 const btnToggleTheme = document.getElementById('btn-toggle-theme');
 const body = document.body;
 
@@ -38,12 +42,15 @@ btnToggleTheme.addEventListener('click', () => {
   }
 });
 
+// Carrega o tema ao abrir a página
 loadTheme();
 
-// Formulário contato com mailto
+// =======================
+// Formulário Contato
+// =======================
 const form = document.getElementById('form-contato');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const nome = form.nome.value.trim();
