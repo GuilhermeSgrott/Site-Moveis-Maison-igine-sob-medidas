@@ -1,0 +1,392 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #fffdfd;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container geral do header */
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo à esquerda, menu à direita */
+  padding: 10px 20px;
+  background-color: #610e0e; /* Exemplo, ajuste conforme quiser */
+}
+
+/* Logo */
+.logo img {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 140px;
+  }
+}
+
+/* Menu */
+.menu {
+  /* O container já usa flex, não precisa margin-left */
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #d32525;
+}
+
+/* Botão tema */
+.btn-theme {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #ffffff;
+}
+
+.hero-text {
+  flex: 1 1 350px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.btn-primary {
+  background: #a34636;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #f70000;
+}
+
+.hero-image {
+  flex: 1 1 350px;
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Section */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Produtos */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.produto-card {
+  background: rgb(82, 66, 66);
+  box-shadow: 0 0 8px rgba(243, 239, 239, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+.produto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.produto-card h3 {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.produto-card p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+.container-borda {
+  border: 4px solid #000000; /* Borda ao redor de tudo */
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 1200px; /* Para centralizar e limitar a largura */
+  margin: 0 auto; /* Centraliza na tela */
+  background-color: #3b3737; /* Fundo leve (opcional) */
+  box-shadow: 0 0 10px rgba(107, 68, 68, 0.1); /* Sombra leve para destaque */
+}
+
+
+
+
+body.dark-mode .servicos ul {
+  border-color: #000000;
+  background: #1c1c1c;
+  color: #000000;
+}
+
+/* Produtos */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  border: 2px solid #ffffff; /* cor da borda para produtos */
+  border-radius: 8px;
+  background: #000000;
+}
+
+body.dark-mode .grid-produtos {
+  border-color: #ffffff;
+  background: #121212;
+}
+
+/* Contato */
+.form-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid #000000; /* cor da borda para contato */
+  border-radius: 8px;
+  background: #000000;
+}
+
+body.dark-mode .form-contato {
+  border-color: #f1f1f1;
+  background: #504b4b;
+}
+
+
+.form-contato input,
+.form-contato textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #d33125;
+  outline: none;
+}
+
+.form-contato button {
+  align-self: flex-start;
+}
+
+/* WhatsApp botão flutuante */
+.btn-wpp {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.btn-wpp img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .menu ul {
+    flex-direction: column;
+    background: #222;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 65px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    padding-top: 2rem;
+  }
+
+  .menu.open ul {
+    transform: translateX(0);
+  }
+
+  .menu ul li {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btn-theme {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background: #000000;
+  color: #fcfcfc;
+}
+
+body.dark-mode .container-header {
+  background: #000000;
+}
+
+body.dark-mode .menu ul {
+  background: #1c1c1c;
+}
+
+body.dark-mode .hero {
+  background: #181818;
+}
+
+body.dark-mode .produto-card {
+  background: #000000;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .form-contato input,
+body.dark-mode .form-contato textarea {
+  background: #ffffff;
+  border-color: #9c8e8e;
+  color: #ff0000;
+}
+
+body.dark-mode .form-contato input:focus,
+body.dark-mode .form-contato textarea:focus {
+  border-color: #56615a;
+}
+
+body.dark-mode .btn-primary {
+  background: #ff0000;
+}
+
+body.dark-mode .btn-primary:hover {
+  background: #ff0000;
+}
+
+.rodape {
+  background-color: #333;         /* Cor de fundo do rodapé */
+  color: #fff;                    /* Cor do texto */
+  text-align: center;             /* Centraliza o texto */
+  padding: 1rem 0;                /* Espaçamento interno superior e inferior */
+  font-size: 1rem;                /* Tamanho do texto */
+  position: relative;             /* Permite posicionamento se precisar */
+  bottom: 0;                      /* Colar no fim da página se for necessário */
+  width: 100%;                    /* Largura total */
+}
+
+.rodape p {
+  margin: 0;                      /* Remove o espaçamento padrão do parágrafo */
+  letter-spacing: 1px;            /* Espaçamento entre letras */
+}
