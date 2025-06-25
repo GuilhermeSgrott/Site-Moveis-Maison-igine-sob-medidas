@@ -46,13 +46,11 @@ Site-Moveis-Maison-igine-sob-medidas/
 ## 🖼️ Prévia do Site
 
 ### 💻 Versão Desktop (Cabeçalho, Galeria e Rodapé)
+![1](https://github.com/user-attachments/assets/8d2a53d6-041c-4f10-97aa-5e70c76474fa)
 
-![print periva 1](https://github.com/user-attachments/assets/1bb2c790-0a28-4b8b-8876-783642d055a7)
+![2](https://github.com/user-attachments/assets/005e59e6-5da5-4c9d-9b5b-16223f44b56e)
 
-
-![print periva 2](https://github.com/user-attachments/assets/ad1c9696-da3d-4039-8b2c-ef71e02058e3)
-
-![print periva 3](https://github.com/user-attachments/assets/2ef58d2f-e6c7-490e-88f0-4311bbe69e58)
+![3](https://github.com/user-attachments/assets/494f9b0d-1b0b-4892-b05f-75a0e42b0789)
 
 
 > 💡 **Dica**: Suba essas imagens na aba *Issues* ou use a pasta `images/` no repositório e atualize os links acima.
