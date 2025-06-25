@@ -45,7 +45,7 @@ Site-Moveis-Maison-igine-sob-medidas/
 
 ## 🖼️ Prévia do Site
 
-### 💻 Versão Desktop (Cabeçalho, Galeria e Rodapé)
+### 💻 Versão mobile (Cabeçalho, Galeria e Rodapé)
 ![1](https://github.com/user-attachments/assets/8d2a53d6-041c-4f10-97aa-5e70c76474fa)
 
 ![2](https://github.com/user-attachments/assets/005e59e6-5da5-4c9d-9b5b-16223f44b56e)
